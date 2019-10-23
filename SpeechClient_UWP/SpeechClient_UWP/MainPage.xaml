@@ -9,13 +9,13 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="Auto" Width="Auto">
 
     <Grid Background="#FF043CF7" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-        <ScrollViewer Name="ScrollViewer" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" RenderTransformOrigin="1.774,9.9" Margin="0,50,0,200">
+        <ScrollViewer Name="ScrollViewer" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" RenderTransformOrigin="1.774,9.9" Margin="0,50,0,160">
             <TextBox x:Name="text_note" HorizontalAlignment="Stretch" Text="" TextWrapping="Wrap" AcceptsReturn="True" VerticalAlignment="Stretch" BorderThickness="0,0,0,2" RequestedTheme="Default" ScrollViewer.VerticalScrollBarVisibility="Auto" FontFamily="Microsoft YaHei" FontSize="108" Foreground="White" Background="#66FFFFFF" FontWeight="Bold"/>
         </ScrollViewer>
 
-        <Button x:Name="btn_start_speech_input" Content="开始语音输入" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="100,500,0,50" Width="300" Height="120" Foreground="White" FontSize="36" Click="btn_start_speech_input_Click"/>
-        <Button x:Name="btn_end_speech_input" Content="停止语音输入" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="525,0,100,50" Width="300" Height="120" Foreground="White" FontSize="36" Click="btn_end_speech_input_Click"/>
-        <TextBox x:Name="MessageBox" HorizontalAlignment="Center" Height="100" Text=" 正在识别... " VerticalAlignment="Bottom" Width="400" Background="#66FFFFFF" FontSize="70" Foreground="White" FontFamily="Microsoft YaHei" IsReadOnly="True" Margin="0,0,0,180"/>
+        <Button x:Name="btn_start_speech_input" Content="开始语音输入" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="100,0,0,50" Width="260" Height="80" Foreground="White" FontSize="36" Click="btn_start_speech_input_Click"/>
+        <Button x:Name="btn_end_speech_input" Content="停止语音输入" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,100,50" Width="260" Height="80" Foreground="White" FontSize="36" Click="btn_end_speech_input_Click"/>
+        <TextBox x:Name="MessageBox" HorizontalAlignment="Center" Height="100" Text=" 正在识别... " VerticalAlignment="Bottom" Width="400" Background="#66FFFFFF" FontSize="70" Foreground="White" FontFamily="Microsoft YaHei" IsReadOnly="True" Margin="0,0,0,140"/>
         <TextBox x:Name="textbox_url" HorizontalAlignment="Stretch" Margin="0,0,200,0" Text="http://127.0.0.1:20000/" VerticalAlignment="Top" Height="50" Foreground="White" Background="#66FFFFFF" FontSize="32"/>
         <Button x:Name="btn_change_url" Content="修改URL" HorizontalAlignment="Right" VerticalAlignment="Top" Width="200" Height="50" Foreground="White" FontSize="32" Click="btn_change_url_Click"/>
 
